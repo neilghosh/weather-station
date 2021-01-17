@@ -18,7 +18,7 @@ openssl genpkey -algorithm RSA -out rsa_private.pem -pkeyopt rsa_keygen_bits:204
 Setup Google Cloud 
 
 <img src="Weather Station.png"
-     alt="Google Cloud Architecture
+     alt="Google Cloud Architecture"
      style="float: left; margin-right: 10px;" />
      
 * Setup IoT Core Registry 
