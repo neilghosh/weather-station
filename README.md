@@ -13,6 +13,14 @@ create private/public key pair
 openssl genpkey -algorithm RSA -out rsa_private.pem -pkeyopt rsa_keygen_bits:2048 && openssl rsa -in rsa_private.pem -pubout -out rsa_public.pem
 ```
 
+Setup Google Cloud 
+* Setup IoT Core Registry 
+* Add Devices
+* Create cloud functions triggered by the IoT core Pub/Sub topics for event and state 
+* Create BigQuery Schema with the attributes sent by the event and state messages 
+* Create Data Studio Report like http://tinyurl.com/weatheriot
+
+
 ```
 python3 publisher.py \
     --registry_id=rpi-bme280 \
@@ -36,3 +44,9 @@ python3 publisher.py \
     --private_key_file=./rsa_private.pem \
     --message_type=state
 ```    
+References
+
+* https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/python-circuitpython-test
+* https://cloud.google.com/iot/docs/how-tos/mqtt-bridge#mqtt_server
+* https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/iot/api-client/mqtt_example
+* https://www.raspberrypi.org/documentation/raspbian/applications/vcgencmd.md
