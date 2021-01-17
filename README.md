@@ -43,6 +43,11 @@ python3 publisher.py \
     --private_key_file=./rsa_private.pem \
     --message_type=state
 ```    
+
+<img src="Data Studio Report.png"
+     alt="Data Studio Report Screenshot"
+     style="float: left; margin-right: 10px;" />
+     
 References
 
 * https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/python-circuitpython-test
