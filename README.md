@@ -1,5 +1,9 @@
 # weather-station
 
+<img src="RaspberryPi BME280.jpg"
+     alt="BME 280 Temp, Humidity, Pressure Sensor conencted to Raspberry Pi"
+     style="float: left; margin-right: 10px;" />
+
 Install dependencies 
 
 ```
