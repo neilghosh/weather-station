@@ -1,7 +1,5 @@
 # weather-station
 
-Start Sending BME280 data
-
 Install dependencies 
 
 ```
@@ -20,6 +18,7 @@ Setup Google Cloud
 * Create BigQuery Schema with the attributes sent by the event and state messages 
 * Create Data Studio Report like http://tinyurl.com/weatheriot
 
+Start Sending BME280 data
 
 ```
 python3 publisher.py \
